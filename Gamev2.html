@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game</title>
+
+    <link re="stylesheet" href="Game CSS.css">
+
+ <script>
+// this function is simply to store a string temporarily to produce an outcome //
+ function hello(){
+// if this is so simple and easy why am i not getting anywhere when i try my own thing//
+ var name = document.getElementById("Fname").value;
+// this part is simply to get the function to return whatever string to the user//
+document.getElementById("header_id").innerHTML = "hello " + name +"!";
+}
+// tell me why labelling a function like below is so easy but it will never call when i change the names in both the button and the function//
+function Somefunction(){
+//i have notes taken specifically in the class on this for loop and different conditions but this is the only way it works for me//
+    for (var i = 1; i <= 5; i++) {
+//this alert is great, but whenever i have an alert run before this even sepereated seven different ways//
+//different parts of the script or body. this alert refuses to work//
+alert(i); }
+
+}    
+   </script>
+
+</head>
+<body>
+    <header>
+        <h2>
+      
+          <nav>
+              <a href="C:\Users\flatt\OneDrive\Desktop\Schooling\OneDrive-2023-08-05\Boards.html">Boards</a>
+              <a href="Gamev2.html">Game</a>
+              <a href="Index.html">Index</a>
+              <a href="Sound Trial.html">Sounds</a>
+              <a href="C:\Users\flatt\OneDrive\Desktop\Schooling\OneDrive-2023-08-05\flatt.html">Flatt</a>
+              <a href="C:\Users\flatt\OneDrive\Desktop\Schooling\OneDrive-2023-08-05\5.1 the biggie.html">The Biggie</a>
+          </nav>
+      </h2>
+      </header>
+<!--i can't tell you how many times this h1 tag has also refused to show up for various things. 
+    it should be there always but i found multiple instances where it won't for some reason-->
+    <h1>Welcome to Cody's attempt!</h1>
+<!--i don't even know why it wont, its a program, it should be like math, i want A+B to equal C that's the way it's been presented
+but oh no why in the world does it give me Q...-->
+
+<!--this head isn't much more then a testing display spot that's easy to tell if this is  all working or not.-->
+    <h1 id="header_id"></h1>
+
+    <input id="Fname" />
+<!--this button is simply to tell whoever puts their name into the box hello-->
+    <button id="test_button2" onclick="hello()">Click here to run hello Function</button>
+<!--This button is supposed to call the function that brings up an alert and then rolls through numbers 1-5-->
+    <button id="test_button1" onclick="Somefunction()">Click here to run Some Function</button>
+    <!--i don't care, i need to turn something i. ten points for having my name on it is better then a zero-->
+  </body>
+
+ 
+
+</html>
